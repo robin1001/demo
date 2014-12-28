@@ -1,1 +1,5 @@
-* Demo of Api
+* Demo of API
+
+remind yourself & save time
+
+don't learn one thing for twice
