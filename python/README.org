@@ -1,6 +1,6 @@
-# python tools
+* python tools
 
-## pylab install
+** pylab install
 #+begin_example
 sudo apt-get install python-scipy
 sudo apt-get install python-numpy
