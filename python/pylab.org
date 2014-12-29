@@ -1,0 +1,20 @@
+* install
+#+begin_example
+sudo apt-get install python-scipy
+sudo apt-get install python-numpy
+sudo apt-get install python-matplotlib
+#+end_example
+
+* numpy
+#+begin_src python
+array([[ 0,  1,  2,  3,  4],
+       [ 5,  6,  7,  8,  9],
+	   [10, 11, 12, 13, 14]])
+#+end_src
++ ndim
++ shape
++ type(arr)
++ zeros((10, 3)), #python syntax, param should be tuple
+
+* matplotlib
+show()
