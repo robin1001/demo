@@ -13,7 +13,7 @@ ssh-keygen -C "811364747@qq.com" -t rsa
 sudo apt-get install pepperflashplugin-nonfree
 sudo update-pepperflashplugin-nonfree --install
 #+END_EXAMPLE
-** emacs 
+** emacs24.4
 1. remove other emacs
 2. sudo apt-get install build-essential
 3. sudo apt-get build-dep emacs24
