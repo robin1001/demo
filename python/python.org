@@ -12,3 +12,6 @@
 >>> print variables # globals from the someFile module
 #+END_EXAMPLE
 
+** ipython
++ shell command(!cmd, like vi)
++ %edit %run (%run -d test.py, debug)
