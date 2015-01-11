@@ -1,8 +1,14 @@
 * python tools
 
-** pylab install
-#+begin_example
-sudo apt-get install python-scipy
-sudo apt-get install python-numpy
-sudo apt-get install python-matplotlib
-#+end_example
+** import 
+1. current dir
+2. parent dir
+3. sub dir
+
+** run file in interpreter
+#+BEGIN_EXAMPLE
+>>> variables= {}
+>>> execfile( "someFile.py", variables )
+>>> print variables # globals from the someFile module
+#+END_EXAMPLE
+
