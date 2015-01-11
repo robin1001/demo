@@ -15,6 +15,19 @@ array([[ 0,  1,  2,  3,  4],
 + shape
 + type(arr)
 + zeros((10, 3)), #python syntax, param should be tuple
-
++ load save loadtxt savetxt
+* pylab
+pylab是 Matplotlib 和Ipython提供的一个模块，提供了类似Matlab的语法，在启动Ipython时可以使用--pylab启动，它相当于导入了如下库：
+#+BEGIN_SRC python
+import numpy
+import matplotlib
+from matplotlib import pylab, mlab, pyplot
+np = numpy
+plt = pyplot
+from IPython.display import display
+from IPython.core.pylabtools import figsize, getfigs
+from pylab import *
+from numpy import *
+#+END_SRC
 * matplotlib
 show()
