@@ -1,0 +1,30 @@
+* tools
+some key note for install or using tools
+
+** git rsa
+#+BEGIN_EXAMPLE
+git config --global user.name "robin1001"
+git config --global user.email "811364747@qq.com"
+ssh-keygen -C "811364747@qq.com" -t rsa
+#+END_EXAMPLE
+
+** flash
+#+BEGIN_EXAMPLE
+sudo apt-get install pepperflashplugin-nonfree
+sudo update-pepperflashplugin-nonfree --install
+#+END_EXAMPLE
+** emacs24.4
+1. remove other emacs
+2. sudo apt-get install build-essential
+3. sudo apt-get build-dep emacs24
+4. download emacs lastest http://ftp.gnu.org/gnu/emacs/
+5. ./configure make sudo make install
+6. 可能少x的库
+#+BEGIN_EXAMPLE
+sudo apt-get install libgtk2.0-dev
+sudo apt-get install libxpm-dev
+sudo apt-get install libjpeg62-dev
+sudo apt-get install libgif-dev
+sudo apt-get install libtiff4-dev
+#+END_EXAMPLE
+
