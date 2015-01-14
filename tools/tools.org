@@ -1,11 +1,43 @@
 * tools
 some key note for install or using tools
 
-** git rsa
+** linux install 
+1. vim 
+2. openssh openssh-server
+3. sudo reconfigure dash
+4. git 
+5. .bashrc color
+6. trash-cli
+7. ipython notebook
+8. vsftpd
+
+** bashrc
+#+BEGIN_EXAMPLE
+alias goagent='cd ~/goagent/local && python proxy.py'
+alias emacs='emacs -nw'
+alias rm='trash'
+alias trash-restore='restore-trash'
+alias goto115='ssh robin1001@pc115'
+#+END_EXAMPLE
+
+** vsftpd
+#+BEGIN_EXAMPLE
+anonymous_enable=YES
+anon_world_readable_only=YES
+local_root=/home/robin1001/ftp
+chroot_local_user=YES
+anon_root=/home/robin1001/ftp
+#+END_EXAMPLE
+
+** git & ssh 
 #+BEGIN_EXAMPLE
 git config --global user.name "robin1001"
 git config --global user.email "811364747@qq.com"
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
 ssh-keygen -C "811364747@qq.com" -t rsa
+ssh-copy-id robin1001@pc115 #copy ssh id, no password needed
 #+END_EXAMPLE
 
 ** flash
@@ -13,6 +45,7 @@ ssh-keygen -C "811364747@qq.com" -t rsa
 sudo apt-get install pepperflashplugin-nonfree
 sudo update-pepperflashplugin-nonfree --install
 #+END_EXAMPLE
+
 ** emacs24.4
 1. remove other emacs
 2. sudo apt-get install build-essential
