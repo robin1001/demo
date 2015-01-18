@@ -1,0 +1,13 @@
+* matlab 
+
+** rand
+rand('state', 0), 让每次生成的随机数相同，如
+#+BEGIN_SRC matlab
+rand('state', 0)
+x1 = rand(1)
+y1 = rand(3, 3)
+rand('state', 0)
+x2 = rand(1)
+y2 = rand(3, 3)
+#+END_SRC
+则x1等于x2, y1等于y2
