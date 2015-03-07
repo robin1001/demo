@@ -1,0 +1,8 @@
+i love              your
+for.sh
+readfile.sh
+test.txt
+
+
+
+
