@@ -46,6 +46,20 @@ sudo apt-get install pepperflashplugin-nonfree
 sudo update-pepperflashplugin-nonfree --install
 #+END_EXAMPLE
 
+** man color
+#+BEGIN_EXAMPLE
+#man color
+#30 – black 31 – red 32 – green 33 – orange 34 – blue 35 – magenta
+#36 – cyan  37 – white
+export LESS_TERMCAP_mb=$(printf '\e[01;31m') # enter blinking mode – red
+export LESS_TERMCAP_md=$(printf '\e[01;33m') # enter double-bright mode – bold, orange 
+export LESS_TERMCAP_me=$(printf '\e[0m') # turn off all appearance modes (mb, md, so, us)
+export LESS_TERMCAP_se=$(printf '\e[0m') # leave standout mode
+export LESS_TERMCAP_so=$(printf '\e[01;44;37m') # enter standout mode – bg_blue, fg_white
+export LESS_TERMCAP_ue=$(printf '\e[0m') # leave underline mode
+export LESS_TERMCAP_us=$(printf '\e[01;32m') # enter -green
+#END_EXAMPLE
+
 ** emacs24.4
 1. remove other emacs
 2. sudo apt-get install build-essential
