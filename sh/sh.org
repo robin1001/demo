@@ -1,0 +1,16 @@
+* shell note
+
+
+
+** leetcode
+
+*** word count
+#+BEGIN_EXAMPLE
+the day is sunny the the
+the sunny is 
+#+END_EXAMPLE
+#+BEGIN_SRC bash
+1. cat words.txt tr -s ' ' '\n'|sort|uniq -c|sort -r|awk '{ print $2, $1 }'
+2. awk '{for(i=1;i<NF;i++) arr[$i]++} END{for(k in a) print k, a[k]}' | sort -k2 -nr
+3. cat words.txt | sed 's: \+:\n:g' | sed '/^$/d' | sort | uniq -c | sort -n -r | awk '{print $2,$1}'
+#+END_SRC
