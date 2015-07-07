@@ -34,8 +34,8 @@ print """Usage: python sum_primes.py [ncpus]
 """
  
 # tuple of all parallel python servers to connect with
-ppservers = ()
-#ppservers = ("10.0.0.1",)
+#ppservers = ()
+ppservers = ("127.0.0.1",)
  
 if len(sys.argv) > 1:
     ncpus = int(sys.argv[1])
