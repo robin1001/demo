@@ -14,3 +14,18 @@ print $head, "\n";
 print $#arr, "\n";
 print scalar @arr, "\n";
 
+foreach $x (@arr) {
+    print $x, " ";
+}
+print "\n";
+
+
+%records = ("apple"=>2, "pear"=>1.5, "banana"=>1);
+for $key (keys(%records)) {
+    print $key, " ", $records{$key}, "\n"
+}
+
+$records{"orange"} = 0.5;
+while (($key, $value) = each(%records)) {
+    print $key, " ", $value, "\n";
+} 
